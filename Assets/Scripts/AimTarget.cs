@@ -6,7 +6,7 @@ public class AimTarget : MonoBehaviour, ITargetable
 {
     private Material _currentMaterial;
 
-    [SerializeField] private Color targetColor = Color.red;
+    [SerializeField] private Color targetColor = Color.blue;
 
     private Color initialColor;
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class AimTarget : MonoBehaviour, ITargetable
 
     public void Target()
     {
-        _currentMaterial.color = Color.red;
+        _currentMaterial.color = Color.blue;
     }
 
     public void StopTarget()
