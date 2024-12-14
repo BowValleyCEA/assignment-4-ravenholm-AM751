@@ -33,6 +33,7 @@ public class PauseMenuScript : MonoBehaviour
 
             public void Pause()
             {
+        Debug.Log("fine");
                 PauseMenu.SetActive(true);
                 Time.timeScale = 0f;
                 GamePaused = true;
@@ -40,12 +41,14 @@ public class PauseMenuScript : MonoBehaviour
             
             public void Menu()
             {
+        Debug.Log("Isee");
               Time.timeScale = 1f;
               SceneManager.LoadScene(0);
             }
 
             public void QuitGame()
             {
+        Debug.Log("ohoo");
               Application.Quit();
             }
 }
