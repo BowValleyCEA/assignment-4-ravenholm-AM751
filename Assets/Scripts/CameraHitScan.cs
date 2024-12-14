@@ -33,34 +33,17 @@ public class CameraHitScan : MonoBehaviour
                 else
                 {
                     collectScore += _target.StartTarget();
-                    //Destroy(_target.gameObject);
                     _target = null;
                     scoreUI.text = ("Score: " + collectScore);
                 }
             }
-           //if (hit.collider.gameObject.TryGetComponent<Target>(out Target target))
-           // {
-           //     if (_target == null || target == _target)
-           //     {
-           //         _target = target;
-           //         target.GetComponent<ParticleSystem>()?.Emit(1);
-           //         Debug.Log(target.gameObject.name);
-           //     }
-           //     else
-           //     {
-           //         collectScore += _target.LookedAt();
-           //         Destroy(_target.gameObject);
-           //         _target = null;
-           //         scoreUI.text = ("Score: " + collectScore);
-           //     }
-
-           // }
            
-        }
-       else if (_target != null)
+           
+       }
+        else if (_target != null)
         {
             collectScore += _target.StartTarget();
-            //Destroy(_target.gameObject);
+
             _target = null;
             scoreUI.text = ("Score: " + collectScore);
         }

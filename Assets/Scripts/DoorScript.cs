@@ -32,12 +32,5 @@ public class DoorScript : MonoBehaviour
         gameObject.GetComponent<BoxCollider>().isTrigger = true;
     }
 
-    //private void OnTriggerEnter(Collider doorZone)
-    //{
-    //    if(doorZone.gameObject.TryGetComponent<PlayerControl>(out PlayerControl player))
-    //    {
-    //       // Destroy(gameObject);
-
-    //    }
-    //}
+   
 }
